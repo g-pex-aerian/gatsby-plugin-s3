@@ -147,6 +147,7 @@ export const deploy = async ({ yes, bucket, userAgent }: DeployArguments = {}) =
         const s3 = new S3({
             region: config.region,
             endpoint: config.customAwsEndpointHostname,
+            s3ForcePathStyle: !!config.s3ForcePathStyle,
             customUserAgent: userAgent ?? '',
             httpOptions,
             logger: config.verbose ? console : undefined,
