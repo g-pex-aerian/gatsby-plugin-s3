@@ -1,6 +1,6 @@
 {
-    "name": "gatsby-plugin-s3",
-    "version": "0.3.8",
+    "name": "gatsby-plugin-s3-force-path-style",
+    "version": "0.3.9",
     "description": "Enables you to deploy your gatsby site to a S3 bucket.",
     "main": "index.js",
     "bin": "bin.js",
@@ -13,10 +13,6 @@
         "develop": "babel --extensions=\".ts\" --out-dir=. src/ -w",
         "snyk-protect": "snyk protect",
         "prepare": "npm run snyk-protect"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/jariz/gatsby-plugin-s3.git"
     },
     "keywords": [
         "gatsby",
