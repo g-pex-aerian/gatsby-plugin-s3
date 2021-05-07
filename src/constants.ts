@@ -84,6 +84,9 @@ export interface S3PluginOptions extends PluginOptions {
     // Custom AWS S3 endpoint, default Amazon AWS hostname  - amazonaws.com
     customAwsEndpointHostname?: string;
 
+    // Whether to force path style URLs for S3 objects.
+    s3ForcePathStyle?: boolean;
+
     // Disables modifications to the S3 Static Website Hosting configuration.
     // Without S3 Static Website Hosting some features
     // (index.html rewriting, trailing slash redirects, and serverside redirects)
